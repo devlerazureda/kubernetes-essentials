@@ -1,7 +1,7 @@
 <h2>Compare Ingress Controllers Performance with Azure DevOps Load Test</h2>
 
 Let's see which Ingress Controller has better performance rather than others.</br>
-We will use Azure DevOps to testing performances of ingress controllers.</br>
+We will use Azure DevOps to test the performances of ingress controllers.</br>
 First we need to define load test scenarios on Azure DevOps.</br>
 Our Load Test Scenario is designed as instantly 1000 users in 2 minutes for all ingress types.</br></br>
 
