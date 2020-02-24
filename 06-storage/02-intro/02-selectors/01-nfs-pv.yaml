@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: pv-nfs-data
+  labels:
+    volume-type: nfs
+    type: custom
+spec:
+  accessModes:
+    - ReadWriteMany
+  capacity:
+    storage: 10Gi
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    server: 10.240.0.11
+    path: /mnt/sharedfolder
+
