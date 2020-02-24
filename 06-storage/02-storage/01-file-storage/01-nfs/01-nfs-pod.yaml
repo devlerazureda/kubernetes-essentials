@@ -8,8 +8,8 @@ spec:
   accessModes:
     - ReadWriteMany
   nfs:
-    server: nfsserver
-    path: "/nfsdata"
+    server: 10.240.0.11
+    path: "/mnt/sharedfolder"
 
 ---
 kind: PersistentVolumeClaim
