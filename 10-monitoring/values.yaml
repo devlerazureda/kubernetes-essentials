@@ -55,7 +55,6 @@ additionalPrometheusRules: []
 #        rules:
 #        - record: my_record
 #          expr: 100 * my_record
-
 ##
 global:
   rbac:
@@ -278,7 +277,7 @@ alertmanager:
     storage:
       volumeClaimTemplate:
         spec:
-          storageClassName: managed-ultra-lrs-02
+          storageClassName: managed-premium
           accessModes: ["ReadWriteOnce"]
           resources:
             requests:
@@ -1493,7 +1492,8 @@ prometheus:
     ## See https://github.com/coreos/prometheus-operator/blob/master/Documentation/api.md#namespaceselector for usage
     ##
     serviceMonitorNamespaceSelector:
-      prometheus-enabled: true
+      matchLabels:
+        prometheus-enabled: true
 
     ## If true, a nil or {} value for prometheus.prometheusSpec.podMonitorSelector will cause the
     ## prometheus resource to be created with selectors based on values in the helm deployment,
@@ -1517,7 +1517,7 @@ prometheus:
 
     ## How long to retain metrics
     ##
-    retention: 10d
+    retention: 365d
 
     ## Maximum size of metrics
     ##
@@ -1607,7 +1607,7 @@ prometheus:
     storageSpec:
       volumeClaimTemplate:
         spec:
-          storageClassName: managed-ultra-lrs-05
+          storageClassName: managed-premium
           accessModes: ["ReadWriteOnce"]
           resources:
             requests:
