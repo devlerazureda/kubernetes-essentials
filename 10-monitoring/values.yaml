@@ -22,7 +22,7 @@ defaultRules:
   create: true
   rules:
     alertmanager: true
-    etcd: true
+    etcd: false
     general: true
     k8s: true
     kubeApiserver: true
