@@ -34,19 +34,17 @@ kubectl get pods -o=jsonpath='{.items[*].spec.containers[*].image}{"\n"}'
 - Aşağıdaki konularda çalışabilmek için öncelikle kendi reponuza bu repoyu fork edip daha sonra pull request ile merge isteği yollayabilirsiniz. Aşağıdaki linkten inceleyebilirsiniz
     - https://www.youtube.com/watch?v=G1I3HF4YWEw
 - Quality of Service for Pods
-    - Aşağıdaki özelliğin tanıtılması için qoqClass.md içine bir yazı eklenilmesi.
+    - Aşağıdaki özelliğin tanıtılması için qosClass.md içine bir yazı eklenilmesi.
     - qosClass özelliğinin tanıtılması.
     - https://kubernetes.io/docs/tasks/configure-pod-container/quality-service-pod/
 - Projected Volume
     - Aşağıdaki özelliğin tanıtılması için projectedvolume.md içine bir yazı eklenilmesi.
-    - Readme dosyasına projected volume nedir nasıl kullanılır.
     - https://kubernetes.io/docs/tasks/configure-pod-container/configure-projected-volume-storage/
 - ImagePull Policy
-    - - Aşağıdaki özelliğin tanıtılması için images.md içine bir yazı eklenilmesi.
+    - Aşağıdaki özelliğin tanıtılması için images.md içine bir yazı eklenilmesi.
     - ImagePullPolicy özelliğinin tanıtılması
     - https://kubernetes.io/docs/concepts/containers/images/
 
-- Share Process Namespace between Containers in a Pod
 - kompose
     - Aşağıdaki özelliğin tanıtılması için kompose.md içine bir yazı eklenilmesi.
     - Docker-compose dosyalarının otomatik kubernetes yamllarına dönüştürülmesi
